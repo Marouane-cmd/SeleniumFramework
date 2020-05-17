@@ -30,15 +30,33 @@ public class UserRegistrationPage extends PageBase
 
 	@FindBy(id = "register-button")
 	WebElement registerBtn;
+	
+	@FindBy(xpath ="//div[@class='result']")
+	public WebElement successMessage;
+	
+	@FindBy(linkText = "Log out")
+	public WebElement logOutLink;
+	
+	@FindBy(linkText = "My account")
+	WebElement myAccountLink;
+	
 	public void UserRegistration(String FirstName, String LastName, String Email, String Password)
 	{
-     genderRadioBtn.click();
-     firstNameBx.sendKeys(FirstName);
-     lastNameBx.sendKeys(LastName);
-     EmailBx.sendKeys(Email);
-     PasswordBx.sendKeys(Password);
-     confPasswordBx.sendKeys(Password);
-     registerBtn.click();
+     clickButton(genderRadioBtn);
+     setTextElementText(firstNameBx, FirstName);
+     setTextElementText(lastNameBx, LastName);
+     setTextElementText(EmailBx, Email);
+     setTextElementText(PasswordBx, Password);
+     setTextElementText(confPasswordBx, Password);
+     clickButton(registerBtn);
 	}
+   public void LogOut() 
+   {
+	   clickButton(logOutLink);
+   }
+   public void OpenMyAccountPage()
+   {
+	   clickButton(myAccountLink);
+   }
 
 }
