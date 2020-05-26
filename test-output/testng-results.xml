@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-05-17T13:21:09 MESZ" name="Default suite" finished-at="2020-05-17T13:21:13 MESZ" duration-ms="3951">
+  <suite started-at="2020-05-24T21:16:53 MESZ" name="Default suite" finished-at="2020-05-24T21:16:57 MESZ" duration-ms="4486">
     <groups>
     </groups>
-    <test started-at="2020-05-17T13:21:09 MESZ" name="Default test" finished-at="2020-05-17T13:21:13 MESZ" duration-ms="3951">
-      <class name="tests.SearchProductTest">
-        <test-method is-config="true" signature="startDriver(java.lang.String)[pri:0, instance:tests.SearchProductTest@7d3a22a9]" started-at="2020-05-17T13:20:40 MESZ" name="startDriver" finished-at="2020-05-17T13:21:09 MESZ" duration-ms="28317" status="PASS">
+    <test started-at="2020-05-24T21:16:53 MESZ" name="Default test" finished-at="2020-05-24T21:16:57 MESZ" duration-ms="4486">
+      <class name="tests.ProductHoverMenuTest">
+        <test-method is-config="true" signature="startDriver(java.lang.String)[pri:0, instance:tests.ProductHoverMenuTest@7d3a22a9]" started-at="2020-05-24T21:16:43 MESZ" name="startDriver" finished-at="2020-05-24T21:16:53 MESZ" duration-ms="9454" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,26 +18,26 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startDriver -->
-        <test-method signature="UserCanSearchForProduct()[pri:0, instance:tests.SearchProductTest@7d3a22a9]" started-at="2020-05-17T13:21:09 MESZ" name="UserCanSearchForProduct" finished-at="2020-05-17T13:21:13 MESZ" duration-ms="3840" status="PASS">
+        <test-method signature="UserCanSelectSubCategoryFromMainMenu()[pri:0, instance:tests.ProductHoverMenuTest@7d3a22a9]" started-at="2020-05-24T21:16:53 MESZ" name="UserCanSelectSubCategoryFromMainMenu" finished-at="2020-05-24T21:16:57 MESZ" duration-ms="4417" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- UserCanSearchForProduct -->
-        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.SearchProductTest@7d3a22a9]" started-at="2020-05-17T13:21:13 MESZ" name="screenshotOnFailure" finished-at="2020-05-17T13:21:13 MESZ" duration-ms="2" status="PASS">
+        </test-method> <!-- UserCanSelectSubCategoryFromMainMenu -->
+        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.ProductHoverMenuTest@7d3a22a9]" started-at="2020-05-24T21:16:57 MESZ" name="screenshotOnFailure" finished-at="2020-05-24T21:16:57 MESZ" duration-ms="3" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=UserCanSearchForProduct status=SUCCESS method=SearchProductTest.UserCanSearchForProduct()[pri:0, instance:tests.SearchProductTest@7d3a22a9] output={null}]]]>
+                <![CDATA[[TestResult name=UserCanSelectSubCategoryFromMainMenu status=SUCCESS method=ProductHoverMenuTest.UserCanSelectSubCategoryFromMainMenu()[pri:0, instance:tests.ProductHoverMenuTest@7d3a22a9] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenshotOnFailure -->
-        <test-method is-config="true" signature="stopDriver()[pri:0, instance:tests.SearchProductTest@7d3a22a9]" started-at="2020-05-17T13:21:14 MESZ" name="stopDriver" finished-at="2020-05-17T13:21:23 MESZ" duration-ms="9423" status="PASS">
+        <test-method is-config="true" signature="stopDriver()[pri:0, instance:tests.ProductHoverMenuTest@7d3a22a9]" started-at="2020-05-24T21:16:57 MESZ" name="stopDriver" finished-at="2020-05-24T21:17:01 MESZ" duration-ms="4192" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stopDriver -->
-      </class> <!-- tests.SearchProductTest -->
+      </class> <!-- tests.ProductHoverMenuTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
