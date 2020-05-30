@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-05-24T21:16:53 MESZ" name="Default suite" finished-at="2020-05-24T21:16:57 MESZ" duration-ms="4486">
+  <suite started-at="2020-05-30T13:17:06 MESZ" name="Default suite" finished-at="2020-05-30T13:17:13 MESZ" duration-ms="7092">
     <groups>
     </groups>
-    <test started-at="2020-05-24T21:16:53 MESZ" name="Default test" finished-at="2020-05-24T21:16:57 MESZ" duration-ms="4486">
-      <class name="tests.ProductHoverMenuTest">
-        <test-method is-config="true" signature="startDriver(java.lang.String)[pri:0, instance:tests.ProductHoverMenuTest@7d3a22a9]" started-at="2020-05-24T21:16:43 MESZ" name="startDriver" finished-at="2020-05-24T21:16:53 MESZ" duration-ms="9454" status="PASS">
+    <test started-at="2020-05-30T13:17:06 MESZ" name="Default test" finished-at="2020-05-30T13:17:13 MESZ" duration-ms="7092">
+      <class name="tests.AddProductToShoppingCartTest">
+        <test-method is-config="true" signature="startDriver(java.lang.String)[pri:0, instance:tests.AddProductToShoppingCartTest@60704c]" started-at="2020-05-30T13:16:57 MESZ" name="startDriver" finished-at="2020-05-30T13:17:06 MESZ" duration-ms="9112" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,26 +18,56 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startDriver -->
-        <test-method signature="UserCanSelectSubCategoryFromMainMenu()[pri:0, instance:tests.ProductHoverMenuTest@7d3a22a9]" started-at="2020-05-24T21:16:53 MESZ" name="UserCanSelectSubCategoryFromMainMenu" finished-at="2020-05-24T21:16:57 MESZ" duration-ms="4417" status="PASS">
+        <test-method signature="UserCanSearchForProductUsingAutoSuggest()[pri:1, instance:tests.AddProductToShoppingCartTest@60704c]" started-at="2020-05-30T13:17:06 MESZ" name="UserCanSearchForProductUsingAutoSuggest" finished-at="2020-05-30T13:17:11 MESZ" duration-ms="5100" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- UserCanSelectSubCategoryFromMainMenu -->
-        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.ProductHoverMenuTest@7d3a22a9]" started-at="2020-05-24T21:16:57 MESZ" name="screenshotOnFailure" finished-at="2020-05-24T21:16:57 MESZ" duration-ms="3" status="PASS">
+        </test-method> <!-- UserCanSearchForProductUsingAutoSuggest -->
+        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.AddProductToShoppingCartTest@60704c]" started-at="2020-05-30T13:17:11 MESZ" name="screenshotOnFailure" finished-at="2020-05-30T13:17:11 MESZ" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=UserCanSelectSubCategoryFromMainMenu status=SUCCESS method=ProductHoverMenuTest.UserCanSelectSubCategoryFromMainMenu()[pri:0, instance:tests.ProductHoverMenuTest@7d3a22a9] output={null}]]]>
+                <![CDATA[[TestResult name=UserCanSearchForProductUsingAutoSuggest status=SUCCESS method=AddProductToShoppingCartTest.UserCanSearchForProductUsingAutoSuggest()[pri:1, instance:tests.AddProductToShoppingCartTest@60704c] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenshotOnFailure -->
-        <test-method is-config="true" signature="stopDriver()[pri:0, instance:tests.ProductHoverMenuTest@7d3a22a9]" started-at="2020-05-24T21:16:57 MESZ" name="stopDriver" finished-at="2020-05-24T21:17:01 MESZ" duration-ms="4192" status="PASS">
+        <test-method signature="UserCanAddProductToShoppingCart()[pri:2, instance:tests.AddProductToShoppingCartTest@60704c]" started-at="2020-05-30T13:17:11 MESZ" name="UserCanAddProductToShoppingCart" finished-at="2020-05-30T13:17:12 MESZ" duration-ms="1079" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserCanAddProductToShoppingCart -->
+        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.AddProductToShoppingCartTest@60704c]" started-at="2020-05-30T13:17:12 MESZ" name="screenshotOnFailure" finished-at="2020-05-30T13:17:12 MESZ" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=UserCanAddProductToShoppingCart status=SUCCESS method=AddProductToShoppingCartTest.UserCanAddProductToShoppingCart()[pri:2, instance:tests.AddProductToShoppingCartTest@60704c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotOnFailure -->
+        <test-method signature="UserCanRemoveProductFromShoppingCart()[pri:3, instance:tests.AddProductToShoppingCartTest@60704c]" started-at="2020-05-30T13:17:12 MESZ" name="UserCanRemoveProductFromShoppingCart" finished-at="2020-05-30T13:17:13 MESZ" duration-ms="845" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserCanRemoveProductFromShoppingCart -->
+        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.AddProductToShoppingCartTest@60704c]" started-at="2020-05-30T13:17:13 MESZ" name="screenshotOnFailure" finished-at="2020-05-30T13:17:13 MESZ" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=UserCanRemoveProductFromShoppingCart status=SUCCESS method=AddProductToShoppingCartTest.UserCanRemoveProductFromShoppingCart()[pri:3, instance:tests.AddProductToShoppingCartTest@60704c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotOnFailure -->
+        <test-method is-config="true" signature="stopDriver()[pri:0, instance:tests.AddProductToShoppingCartTest@60704c]" started-at="2020-05-30T13:17:13 MESZ" name="stopDriver" finished-at="2020-05-30T13:17:18 MESZ" duration-ms="4763" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stopDriver -->
-      </class> <!-- tests.ProductHoverMenuTest -->
+      </class> <!-- tests.AddProductToShoppingCartTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

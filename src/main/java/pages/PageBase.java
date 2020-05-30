@@ -32,4 +32,8 @@ public class PageBase {
 	{
 		jse.executeScript("scrollBy(0,2500)");
 	}
+	public void clearText(WebElement element) 
+	{
+		element.clear();
+	}
 }

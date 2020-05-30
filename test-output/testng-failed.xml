@@ -3,14 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.ProductHoverMenuTest">
+      <class name="tests.AddProductToShoppingCartTest">
         <methods>
           <include name="startDriver"/>
           <include name="stopDriver"/>
+          <include name="UserCanAddProductToShoppingCart"/>
+          <include name="UserCanUpdateProductQuantityInCart"/>
+          <include name="UserCanRemoveProductFromShoppingCart"/>
           <include name="screenshotOnFailure"/>
-          <include name="UserCanSelectSubCategoryFromMainMenu"/>
         </methods>
-      </class> <!-- tests.ProductHoverMenuTest -->
+      </class> <!-- tests.AddProductToShoppingCartTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

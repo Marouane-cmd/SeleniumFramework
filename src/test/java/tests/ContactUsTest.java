@@ -20,8 +20,8 @@ public class ContactUsTest extends TestBase{
 		home = new HomePage(driver);
 		home.openContactUsPage();
 		contactPage= new ContactUsPage(driver);
-		contactPage.contactUs(fullname, email, enquiry);
-		Assert.assertTrue(contactPage.successMsg.getText().contains("Your enquiry"));
+		contactPage.ContactUs(fullname, email, enquiry);
+		Assert.assertTrue(contactPage.successMessage.getText().contains("Your enquiry"));
 	}
 
 }
