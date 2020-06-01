@@ -30,7 +30,7 @@ public class PageBase {
 	}
 	public void scrollToBottom() 
 	{
-		jse.executeScript("scrollBy(0,2500)");
+		jse.executeScript("scrollBy(0,3500)");
 	}
 	public void clearText(WebElement element) 
 	{

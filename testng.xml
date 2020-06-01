@@ -13,7 +13,7 @@
       <class name="tests.AddProductToWishlistTest"/>
       <class name="tests.AddProductToShoppingCartTest"/>
       <class name="tests.AddProductToCompareTest"/>
-      <class name="tests.AddProductReviewTestTest"/>
+      <class name="tests.AddProductReviewTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

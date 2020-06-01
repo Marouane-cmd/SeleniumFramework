@@ -35,7 +35,7 @@ public class RegesitredUserCheckoutProductTest extends TestBase
 		homeObject = new HomePage(driver);
 		homeObject.openRegistrationPage();
 		registerObject= new UserRegistrationPage(driver);
-		registerObject.UserRegistration("Marwann", "Hallek", "hallek.mm035@gk654762.com", "2020@2020");
+		registerObject.UserRegistration("Marwann", "Hallek", "hallek.mm035@gk2442.com", "2020@2020");
 		Thread.sleep(3000);
 		Assert.assertTrue(registerObject.successMessage.getText().contains("completed"));
 		System.out.println(registerObject.successMessage.getText());

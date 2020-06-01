@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-passed">Default suite</span>
+              <span class="suite-name border-failed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\Margot\AppData\Local\Temp\testng-eclipse--384209388\testng-customsuite.xml</span>
+                    <span>C:\Users\Margot\AppData\Local\Temp\testng-eclipse-659635904\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods,   5 passed</span>
+                    <span class="method-stats">5 methods, 1 failed,   4 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="tests.RegesitredUserCheckoutProductTest" class="method navigator-link" hash-for-method="UserCanCheckoutProduct">UserCanCheckoutProduct</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -108,11 +122,6 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="tests.RegesitredUserCheckoutProductTest" class="method navigator-link" hash-for-method="UserCanAddProductToShoppingCart">UserCanAddProductToShoppingCart</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="tests.RegesitredUserCheckoutProductTest" class="method navigator-link" hash-for-method="UserCanCheckoutProduct">UserCanCheckoutProduct</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -137,6 +146,80 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
+          <div class="suite-Default_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests.RegesitredUserCheckoutProductTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="UserCanCheckoutProduct">
+                  </a> <!-- UserCanCheckoutProduct -->
+                  <span class="method-name">UserCanCheckoutProduct</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: #termsofservice
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-HERO5B5&apos;, ip: &apos;192.168.178.20&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;13.0.1&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 75.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200403170909, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 12772, moz:profile: C:\Users\Margot\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 313d3103-20e9-48c4-b044-9732fed806f5
+*** Element info: {Using=id, value=termsofservice}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy15.click(Unknown Source)
+	at pages.PageBase.clickButton(PageBase.java:25)
+	at pages.ShoppingCartPage.OpenCheckoutPage(ShoppingCartPage.java:47)
+	at tests.RegesitredUserCheckoutProductTest.UserCanCheckoutProduct(RegesitredUserCheckoutProductTest.java:72)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-failed -->
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -159,13 +242,6 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="UserCanCheckoutProduct">
-                  </a> <!-- UserCanCheckoutProduct -->
-                  <span class="method-name">UserCanCheckoutProduct</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="UserCanRegisterSuccessfully">
                   </a> <!-- UserCanRegisterSuccessfully -->
                   <span class="method-name">UserCanRegisterSuccessfully</span>
@@ -183,7 +259,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Margot\AppData\Local\Temp\testng-eclipse--384209388\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Margot\AppData\Local\Temp\testng-eclipse-659635904\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -234,30 +310,30 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(5);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'UserCanCheckoutProduct')
+data.setCell(0, 1, 'UserCanRegisterSuccessfully')
 data.setCell(0, 2, 'tests.RegesitredUserCheckoutProductTest')
-data.setCell(0, 3, 38012);
+data.setCell(0, 3, 8611);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'UserCanRegisterSuccessfully')
+data.setCell(1, 1, 'UserCanSearchUsingAutoSugggest')
 data.setCell(1, 2, 'tests.RegesitredUserCheckoutProductTest')
-data.setCell(1, 3, 6495);
+data.setCell(1, 3, 5144);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'UserCanSearchUsingAutoSugggest')
+data.setCell(2, 1, 'RegeistredUserCanLogOut')
 data.setCell(2, 2, 'tests.RegesitredUserCheckoutProductTest')
-data.setCell(2, 3, 4274);
+data.setCell(2, 3, 1914);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'UserCanAddProductToShoppingCart')
 data.setCell(3, 2, 'tests.RegesitredUserCheckoutProductTest')
-data.setCell(3, 3, 1934);
+data.setCell(3, 3, 943);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'RegeistredUserCanLogOut')
+data.setCell(4, 1, 'UserCanCheckoutProduct')
 data.setCell(4, 2, 'tests.RegesitredUserCheckoutProductTest')
-data.setCell(4, 3, 1001);
+data.setCell(4, 3, 97);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 51 seconds</span>
+              <span class="suite-total-time">Total running time: 16 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -290,47 +366,49 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="test-method">
                 <span class="method-name">UserCanRegisterSuccessfully</span>
-                <span class="method-start">11852 ms</span>
+                <span class="method-start">26921 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">screenshotOnFailure([TestResult name=UserCanRegisterSuccessfully status=SUCCESS method=RegesitredUserCheckoutProductTest...)</span>
-                <span class="method-start">18353 ms</span>
+                <span class="method-start">35539 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">UserCanSearchUsingAutoSugggest</span>
-                <span class="method-start">18359 ms</span>
+                <span class="method-start">35556 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">screenshotOnFailure([TestResult name=UserCanSearchUsingAutoSugggest status=SUCCESS method=RegesitredUserCheckoutProductT...)</span>
-                <span class="method-start">22635 ms</span>
+                <span class="method-start">40704 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">UserCanAddProductToShoppingCart</span>
-                <span class="method-start">22636 ms</span>
+                <span class="method-start">40706 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">screenshotOnFailure([TestResult name=UserCanAddProductToShoppingCart status=SUCCESS method=RegesitredUserCheckoutProduct...)</span>
-                <span class="method-start">24574 ms</span>
+                <span class="method-start">41652 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">UserCanCheckoutProduct</span>
-                <span class="method-start">24576 ms</span>
+                <span class="method-start">41655 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">screenshotOnFailure([TestResult name=UserCanCheckoutProduct status=SUCCESS method=RegesitredUserCheckoutProductTest.User...)</span>
-                <span class="method-start">62591 ms</span>
+                <span class="method-name">screenshotOnFailure([TestResult name=UserCanCheckoutProduct status=FAILURE method=RegesitredUserCheckoutProductTest.User...)</span>
+                <span class="method-start">41776 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">RegeistredUserCanLogOut</span>
-                <span class="method-start">62594 ms</span>
+                <span class="method-start">42110 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">screenshotOnFailure([TestResult name=RegeistredUserCanLogOut status=SUCCESS method=RegesitredUserCheckoutProductTest.Reg...)</span>
-                <span class="method-start">63597 ms</span>
+                <span class="method-start">44027 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-suite after">
                 <span class="method-name">stopDriver</span>
-                <span class="method-start">63704 ms</span>
+                <span class="method-start">44334 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
