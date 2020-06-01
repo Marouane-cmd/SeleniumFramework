@@ -1,7 +1,10 @@
+
+
 package tests;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
@@ -14,6 +17,18 @@ import utitlities.Helper;
 public class TestBase
 {
 	public static WebDriver driver;
+	public static String downloadPath= System.getProperty("user.dir")+"/Downloads";
+	public static FirefoxOptions firefoxOption()
+	{
+		FirefoxOptions option = new FirefoxOptions();
+		option.addPreference("browser.download.folderList.", 2);
+		option.addPreference("browser.download.dir", downloadPath);
+		option.addPreference("browser.helperApps.neverAsk.saveToDisk", "application/pdf,application/octet-stream");
+		option.addPreference("browser.download.manager.showWhenStarting", false);
+		option.addPreference("pdfjs.disabled", true);
+		return option;
+	}
+	
 
 	@BeforeSuite
 	@Parameters({"browser"})
@@ -25,7 +40,7 @@ public class TestBase
 		}
 		else if (BrowserName.equalsIgnoreCase("firefox")) {
 			System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")+"/Drivers/geckodriver.exe");
-			driver = new FirefoxDriver();
+			driver = new FirefoxDriver(firefoxOption());
 			
 		}
 		

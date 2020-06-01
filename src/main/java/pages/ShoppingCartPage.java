@@ -23,6 +23,12 @@ public class ShoppingCartPage extends PageBase
 	@FindBy(css = "td.subtotal")
 	public WebElement totaLbl;
 	
+	@FindBy(id = "checkout")
+	WebElement checkoutBtn;
+	
+	@FindBy (id="termsofservice")
+	WebElement agreeCheckBox;
+	
 	public void RemoveProductFromCart() 
 	{
 		clickButton(removeCheck);
@@ -35,6 +41,12 @@ public class ShoppingCartPage extends PageBase
 		setTextElementText(quantityText, quantity);
 		clickButton(updateCartBtn);
 	}
+	
+    public void OpenCheckoutPage() 
+    {
+    	clickButton(agreeCheckBox);
+    	clickButton(checkoutBtn);
+    }
 
 
 }
